@@ -1,0 +1,34 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("select.value").change(function(){
+        var v=$(this).children("option:selected").val();
+        console.log(v);
+        if(v==="Enable"){
+            $("#contents").removeAttr('disabled');
+        }
+    });
+});
+</script>
+</head>
+<body>
+    <div style="border:1px solid black; width:50%;margin:auto;padding:20px">
+    <h1>Form</h1>
+<form class="container">
+<label>Name</label>
+<input type="text" placeholder="Enter your name" required><br><br>
+<label>Password</label>
+<input type="text" placeholder="Enter your password" required><br><br>
+<label for="cars">Enable/Disabled</label>
+
+<select name="value" class="value">
+  <option >Disable</option>
+  <option >Enable</option>
+  </select>
+  <button type="submit" id="contents" disabled>submit</button>
+</form>
+</div>
+</body>
+</html>

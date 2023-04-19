@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script src="jquery-3.6.1.min.js"></script>
+        <title>Joke Generator</title>
+    </head>
+    <body>
+        <h2>Click here to get a jokes by using jquery</h2>
+        <button>click here to get a Joke</button><br><br>
+        <div style="border: 1px solid black; width:50%">
+        <h2 id="result"></h2>
+        </div>
+        <script>
+    $(document).ready(function(){
+    $('button').click(function(){
+        var jokes=["I'm afraid for the calendar. Its days are numbered.","My wife said I should do lunges to stay in shape. That would be a big step forward.",
+        "Singing in the shower is fun until you get soap in your mouth. Then it's a soap opera.","What do a tick and the Eiffel Tower have in common?","They're both Paris sites."];
+        $('#result').html(random_item(jokes))
+        
+    });
+    function random_item(jokes){
+        return jokes[Math.floor(Math.random()*jokes.length)];
+    }
+});
+        </script>
+    </body>
+</html>

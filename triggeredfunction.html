@@ -1,0 +1,24 @@
+
+<html>
+	<head>
+		<script src="jquery-3.6.1.min.js"></script>
+	</head>
+	<body>
+		<h1>This is used to Triggered Handler</h1>
+		<input type="text" value="Handle Triggered">
+		<button>get triggered</button>
+		<p></p>
+	</body>
+	<script>
+		$(document).ready(function(){
+			$("input").focus(function(){
+				$("p").html("triggered Event is run Successfully");
+			});
+			$("button").click(function(){
+				$("input").trigger("focus");
+			});
+			
+		});
+	</script>
+
+</html

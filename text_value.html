@@ -1,0 +1,20 @@
+<html>
+<body>
+Enter the value:
+<input type="textbox" id = "name">
+<button>Get</button>
+<h1 id="value"> </h1>
+<script src="jquery-3.6.1.min.js">
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+$("button").click(function(){
+	var name = $("#name").val();
+	//console.log(name);
+	$("#value").html(name);
+});
+})
+
+</script>
+</body>
+</html>

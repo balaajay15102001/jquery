@@ -1,0 +1,38 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>Disable Right click using jQuery</h1>
+<script>
+$(document).ready(function(){
+     $(document).bind("contextmenu",function(e){
+     	 alert('right click disabled');
+	$(div).hide();
+	
+        return false;
+    });
+});
+</script>
+<div class="container">
+  
+<h3>
+    <p>jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.
+ It is free, open-source software using the permissive MIT License. As of Aug 2022, jQuery is used by 77% of the 10 million most popular websites.
+ Web analysis indicates that it is the most widely deployed JavaScript library by a large margin, having at least 3 to 4 times more usage than any other
+ JavaScript library.</p>
+
+<p>jQuery's syntax is designed to make it easier to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications.
+ jQuery also provides capabilities for developers to create plug-ins on top of the JavaScript library. This enables developers to create abstractions for low-level
+ interaction and animation, advanced effects and high-level, theme-able widgets. The modular approach to the jQuery library allows the creation of powerful dynamic 
+web pages and Web applications.</p>
+</h3>
+
+    <button>
+      Right click using jQuery
+    </button>
+</div>
+   
+</body>
+</body>
+</html>
